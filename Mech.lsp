@@ -1,0 +1,5 @@
+(defun c:dd(/ num)
+  (setq num (getint "\nEnter duct size in inches: "))
+  (princ "\n")  
+  (command "mline" "s" num "j" "z" pause)
+  )
